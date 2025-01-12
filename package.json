@@ -2,11 +2,14 @@
   "name": "iichat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cari1412.github.io/iichat",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -25,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
+    "gh-pages": "^6.3.0",
     "typescript": "^5"
   }
 }
